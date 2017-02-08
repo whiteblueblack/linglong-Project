@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .warp{
+            overflow: hidden;
+        }
+        ul{
+            position: relative;
+            list-style: none;
+            width: 2700px;
+            left: 0;
+          .
+            transition: all 0.5s;
+        }
+
+        li{
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+
+
+
+
+    </style>
+
+    <script>
+
+
+
+        window.onload = function () {
+            var oUL =document.getElementById("ul1");
+
+            document.onmousemove = function (ev) {
+                var oEvent = window.event||ev;
+                var x = oEvent.clientX;
+                var w = window.innerWidth;
+
+                if(x>w*0.2&&x<w*0.8){
+
+                    var par = (x - 0.2*w)/(0.6*w);
+//                    alert(par*(w-3600)+"px");
+                    oUL.style.left = par*(w-2700)+"px";
+
+                }
+
+
+            }
+
+
+
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+<div class="warp">
+
+
+       <ul id="ul1">
+
+           <li style="background-color: red"></li>
+           <li style="background-color: black"></li>
+           <li style="background-color: aliceblue"></li>
+           <li style="background-color: chartreuse"></li>
+           <li style="background-color: azure"></li>
+           <li style="background-color: red"></li>
+           <li style="background-color: black"></li>
+           <li style="background-color: aliceblue"></li>
+           <li style="background-color: chartreuse"></li>
+       </ul>
+
+
+
+
+</div>
+</body>
+</html>

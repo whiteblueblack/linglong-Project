@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灵龙文化--产品展示</title>
+    <link rel="icon" href="image/icon_03.gif" type=‘image/x-ico' />
+    <link rel="stylesheet" href="css/Product_display.css">
+    <script>
+        window.onload =  function(){
+            var oWrap = document.getElementById("wrap");
+
+            PicMove(oWrap);
+            function PicMove(ele){
+                document.onmousemove = function(ev){
+                    var oEvent = window.event||ev;
+                    var x = oEvent.clientX;
+                    var w = window.innerWidth;
+                    if(x>w*0.2&&x<w*0.8){
+                        var movewidth = (x - 0.2*w)/(0.6*w);
+                        ele.style.left = movewidth*(w-3330)+"px";
+                    }
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="wrap-box"><!--3466*473-->
+    <div class="nav-left">
+        <a href="index.html" target="_self">首页></a><span>产品展示</span>
+    </div>
+    <ul class="nav-bottom">
+        <li><a href="Company_profile.html" target="_self">公司简介</a></li>
+        <li><a href="Join_us.html" target="_self">加入我们</a></li>
+        <li><a href="Privacy_statement.html" target="_self">隐私声明</a></li>
+        <li><a href="linglongmedia.html" target="_self">联系灵龙</a></li>
+    </ul>
+    <div class="slide-banner"> <!--给定值可以隐藏滚动条,但是将不会适应屏幕尺寸-->
+        <ul id="wrap">
+            <li id="banner-1">
+                <ul>
+                    <li class="banner-1"><a href="#"><img src="image/2016623105419.jpg" alt=""></a></li>
+                    <li class="banner-2"><a href="#"><img src="image/2016527162221.jpg" alt=""></a></li>
+                    <li class="banner-9"><a href="#"><img src="image/201662310555.jpg" alt=""></a></li>
+                </ul>
+            </li>
+            <li class="banner-3"><a href="#"><img src="image/2016623105611.jpg" alt=""></a></li>
+            <li id="banner-4">
+                <ul>
+                    <li class="banner-4"><a href="#"><img src="image/201652614327.jpg" alt=""></a></li>
+                    <li id="banner-5"><a href="#"><img src="image/20166234599.jpg" alt=""></a></li>
+                    <li class="banner-10"><a href="#"><img src="image/2016623105644.jpg" alt=""></a></li>
+                </ul>
+            </li>
+            <li id="banner-6"><a href="#"><img src="image/2016623105744.jpg" alt=""></a></li>
+            <li id="banner-7">
+                <ul>
+                    <li class="banner-7"><a href="#"><img src="image/2016623105847.jpg" alt=""></a></li>
+                    <li class="banner-11"><a href="#"><img src="image/2016623105933.jpg" alt=""></a></li>
+                    <li class="banner-12"><a href="#"><img src="image/20166235314.jpg" alt=""></a></li>
+                </ul>
+            </li>
+            <li class="banner-8"><a href="#"><img src="image/2016526141413.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

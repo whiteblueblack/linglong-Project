@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .spective{
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:220px ;
+            line-height:160px;
+            transform :translate(-50%,-50%);
+            border-radius:10px;
+            overflow:hidden;
+            background:#E91E63;
+            color:#fff;
+            text-align:center;
+            cursor:pointer;
+            transition:transform .2s;
+        }
+        .spective:hover{
+            box-shadow:0 0 0 1920px rgba(0,0,0,0.7);
+            transform:translate(-50%, -50%) scale(1.2);
+        }
+        .underline{
+            position: absolute;
+            top:50%;left: 50%;
+            transform:translate(-50%,-50%);
+            width: 400px;height:200px;
+            text-align: center;
+            color: white;
+            font-size: 200%;
+            background:#00aabb;
+            border-radius:.5em;
+        }
+        .underline1-ajkps{
+            cursor:pointer;
+            position: absolute;
+            left:16%;
+            text-shadow: .1em 0 #00aabb, -.1em 0 #00aabb;
+            transition:1s;
+        }
+        .underline1-ajkps:hover{
+            background-position: 0 1.15em;
+        }
+        .underline1-ajkps{
+            top:10%;
+            background: linear-gradient(white, white) no-repeat;
+            background-size: 100% 1px;
+            background-position: -10em 1.15em;
+        }
+    </style>
+</head>
+<body>
+<div  class="underline">
+    <span class="underline1-ajkps">这是个突出显示的东西</span>
+</div>
+</body>
+</html>

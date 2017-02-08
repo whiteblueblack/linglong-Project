@@ -1,0 +1,339 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.wrap{
+    width:100%;
+    height:100%;
+}
+.wrap ul{
+    margin-bottom:30px;
+}
+.list{
+    width:675px;
+    height:100%;
+    margin:88px 250px 74px auto;
+}
+.list li .news-show{
+    width:674px;
+    height:448px;
+    position:relative;
+    overflow: hidden;
+    background-image:url('../image/2016630172940.jpg');
+}
+.list li .news-show-2{
+    overflow:hidden;
+    background-image:url('../image/2016624172641.jpg');
+}
+.list li .news-show-3{
+    background-image:url('../image/2016527165248.jpg');
+}
+.list li .news-show-4{
+    background-image:url('../image/201662418859.jpg');
+}
+.news-show::before,.news-show::after{
+    content:"";
+    position:absolute;
+    background-image:url('../image/2016630172940.jpg');
+    background-size:674px 448px;
+    background-position:center center;
+    /*border-radius:50%;*/
+    top:50%;
+    left:50%;
+}
+.news-show-2::before,.news-show-2::after{
+    background-image:url('../image/2016624172641.jpg');
+}
+.news-show-3::before,.news-show-3::after{
+    background-image:url('../image/2016527165248.jpg');
+}
+.news-show-4::before,.news-show-4::after{
+    background-image:url('../image/201662418859.jpg');
+
+}
+.news-show:hover::after{
+    z-index:3;
+
+    animation:wave 3s ease-out .1s;
+    -webkit-animation:wave 3s ease-out .1s;
+    /*margin-top:1px;*/
+}
+.news-show:hover::before{
+    z-index:2;
+    animation:wave 3s ease-out;
+    -webkit-animation:wave 3s ease-out;
+    /*margin-top:-2px;*/
+}
+@keyframes wave{
+    0%{
+        top: 50%;left: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+        width:0;
+        height:448px;
+    }
+    50%{
+        top: 50%;left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        height:580px;
+        width:778px
+    }
+    100%{
+        top: 50%;left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        height:580px;
+        width:778px;
+    }
+}
+@-webkit-keyframes wave {
+    0% {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.2);
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        height: 580px;
+        width: 778px;
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        height: 580px;
+        width: 778px;
+    }
+}
+.wrap ul li{
+    width:100%;
+}
+#smart_dragon{
+    width:220px;
+    height:56px;
+    margin-bottom:28px;
+}
+#smart_dragon img{
+    width:100%;
+}
+.news-date{
+    margin-bottom:15px;
+    font-family: "STXihei";
+    font-size:14px;
+}
+.news-1 .news-title{
+    width:461px;
+    height:101px;
+    font-size:24px;
+    margin-top:25px;
+    letter-spacing: 1px;
+    font-family: "STXihei";
+}
+.news-title a{
+    text-decoration: none;
+    color:#1f1a17;
+    transition:all 0.2s;
+}
+.news-title a:hover{
+   color:#dc342c;
+}
+.news-2 .news-title{
+    width:461px;
+    height:101px;
+    font-size:24px;
+    margin-top:25px;
+    letter-spacing: 1px;
+    font-family: "STXihei";
+}
+.news-3 .news-title{
+    width:461px;
+    height:101px;
+    font-size:24px;
+    margin-top:25px;
+    letter-spacing: 1px;
+    font-family: "STXihei";
+}
+.news-4 .news-title{
+    width:461px;
+    height:101px;
+    font-size:24px;
+    margin-top:25px;
+    letter-spacing: 1px;
+    font-family: "STXihei";
+}
+.news-title a{
+    text-decoration:none;
+    color:#1f1a17;
+}
+.news-1 .bottom-border{
+    width:296px;
+    margin:0 auto 30px 104px;
+    border-bottom:2px solid #1f1a17;
+}
+.news-2 .bottom-border{
+    width:296px;
+    margin:0 auto 30px 104px;
+    border-bottom:2px solid #1f1a17;
+}
+.news-3 .bottom-border{
+    width:296px;
+    margin:0 auto 30px 104px;
+    border-bottom:2px solid #1f1a17;
+}
+.news-4 .bottom-border{
+    width:296px;
+    margin:0 auto 0 104px;
+    border-bottom:2px solid #1f1a17;
+}
+#bottom-page{
+    width:598px;
+    height:74px;
+    bottom:0;
+    font-size:14px;
+    line-height:74px;
+    margin:0 auto;
+}
+#bottom-page li{
+    /*width:50px;*/
+    float:left;
+    margin-right:10px;
+}
+#bottom-page-list-1{
+    width:80px;
+}
+#bottom-page-list-2{
+    width:31px;
+}
+#bottom-page-list-3{
+    width:47px;
+}
+#bottom-page-list-4{
+    width:46px;
+}
+#bottom-page-list-5{
+    width:47px;
+}
+#bottom-page-list-6{
+    width:40px;
+}
+#bottom-page-list-7{
+    width:39px;
+}
+#bottom-page-list-8{
+    width:86px;
+}
+#bottom-page-list-9{
+    width:42px;
+}
+#bottom-page-list-10{
+    width:39px;
+}
+.navAndsearch{
+    position:fixed;
+    right:135px;
+    width:110px;
+    top:57px;
+    /*margin:57px 135px auto auto;*/
+}
+.search-box{
+    width:110px;
+    height:23px;
+}
+.search-box input{
+    float:left;
+    width:71px;
+    height:23px;
+    margin-left:1px;
+    text-indent: 5px;
+    outline:0 none;
+    /*border:2px #4e4e4e;*/
+}
+.search-box div{
+    width:38px;
+    height:23px;
+    float:right;
+    margin-right:0;
+    background-color: #f0f0f0;
+    font:12px/23px "宋体";
+    text-align: center;
+    transition:all 0.2s;
+}
+.search-box div:hover{
+    background-color: #c9c9c9;
+}
+.search-box a{
+    color:black;
+    text-decoration:none;
+}
+.nav{
+    margin:24px 0 auto auto ;
+    width:57px;
+}
+.nav li{
+    width:100%;
+    margin-bottom:15px;
+    font-size:13px;
+    border-bottom:0 solid #8d8d8d;
+    text-align: right;
+    position:relative;
+}
+.nav  #nav-title{
+    text-align: right;
+}
+.nav  #nav-title a{
+    font-weight:bold;
+    color:black;
+    text-decoration: none;
+}
+.nav li a{
+    transition:color 1s linear;
+    color:#969594;
+    text-decoration: none;
+}
+.nav .nav-title-2 span{
+    background-color: #edc557;
+}
+.nav .nav-title-2:hover span{
+    width:100%;
+    /*border-bottom:1px solid #000000;*/
+}
+.nav .nav-title-2 span,.nav .nav-title-3 span,.nav .nav-title-4 span{
+    display:inline-block;
+    position:absolute;
+    bottom:-2px;
+    left:0;
+    width:0;
+    height:1px;
+    /*border-bottom: 0 solid;*/
+    transition:all 0.5s ease-out;
+}
+.nav .nav-title-3 span{
+    background-color: #3b4046;
+}
+.nav .nav-title-4 span{
+    background-color: #e1031a;
+}
+.nav .nav-title-4:hover span{
+    width:100%;
+}
+.nav .nav-title-3:hover span{
+    width:100%;
+}
+.bottom-border{
+    width:0;
+
+}
+.nav li:hover a{
+    color: #e2061d;
+}
+/*#e2061d 宛如岩浆般的心情从内心中澎湃而出*/
+/*如果可以将图片的波动效果变成横向扩散的话，可以更好一些呢？*/
+
+
+
+
+
+

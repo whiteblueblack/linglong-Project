@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8"/>
+    <style>
+        body {
+            background-color: #8d8d8d;
+            overflow: hidden;
+        }
+        #wrap {
+            background:url("../image/moving_item_bg1.jpg") center no-repeat;
+            background-size: 100% 120%;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            /*margin:auto;*/
+            perspective:2000px;
+            /*transform:translateZ(100px);*/
+        }
+
+        #divFly {
+            transform-style:preserve-3d ;
+            margin-left: 189px;
+            position: fixed;
+            transition: left ease-out 0.1s;
+        }
+        #divFly2{
+            transform-style:preserve-3d ;
+            margin-left: 189px;
+            position: fixed;
+            transition: left ease-out 0.1s;
+        }
+        #divFly div{
+            margin-left: 20px;
+            width: 200px;
+            height: 200px;
+            float: left;
+
+        }
+        #divFly2 div{
+            margin-left: 20px;
+            width: 200px;
+            height: 200px;
+            float: left;
+            opacity:0.9;
+        }
+        #div2 {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            margin: auto;
+            z-index: 100;
+            perspective-origin:center;
+        }
+        #img1,#img-1{
+            width:804px;
+            height:600px;
+            transform: translateZ(-500px) translateX(-400px) rotateY(-34deg);
+        }
+        #img2,#img-2{
+            width:240px;
+            height:280px;
+            transform: translateZ(-2707px) rotateY(21deg) translateX(-646px);
+        }
+        #img3,#img-3{
+            width:800px;
+            height:400px;
+            transform: translateZ(-103px) translateX(80px) rotateX(180deg);
+        }
+        #img4,#img-4{
+            width:460px;
+            height:620px;
+            transform: translateZ(0px) translateX(-1100px) translateY(0px) rotateY(0deg)
+        }
+        #img5,#img-5{
+            width:440px;
+            height:620px;
+            transform: translateZ(-1092px) translateY(-83px) rotateX(0deg) translateX(613px);
+        }
+        /*#img6{*/
+            /*width:100%;*/
+            /*height:700px;*/
+            /*z-index: -1;*/
+            /*position:absolute;*/
+            /*transform:rotateX(12deg) ;*/
+
+        /*}*/
+
+
+    </style>
+    <script type="text/javascript">
+        function DivFlying() {
+            var div = document.getElementById("divFly");
+            var div2 = document.getElementById("divFly2");
+            if (!div) {
+                return;
+            }
+//            var e=e||event;
+//            var intX =e.clientX;
+            var intX = Number((window.event.clientX) /1366);
+            var intY = Number((window.event.clientY) /900);
+//            var intY = window.event.clientY;
+//            var e=e||event; //兼容FF和IE
+//            var nowx=e.clientX;//X坐标
+//            var nowy=e.clientY;//Y坐标
+            div.style.left = intX * 70 + "px";
+            div.style.top = intY * 70 + "px";
+            div2.style.left = intX * 30 + "px";
+            div2.style.top = intY * 30 + "px";
+//            div.style.top = intY-100+ "px";
+
+//            div.onmouseover= function(){
+//                div.style.left = intX;
+//            }
+        }
+//        function DivFlying2() {
+//            var div2 = document.getElementById("divFly2");
+//
+//            if (!div2) {
+//                return;
+//            }
+//            var e=e||event;
+//
+//            var intX = Number((e.clientX) /1366);
+//            var intY = Number((e.clientY) /900);
+//            div2.style.left = intX * 50 + "px";
+//            div2.style.top = intY * 50 + "px";
+//
+//        }
+        document.onmousemove = DivFlying;
+        document.onmousemove = DivFlying2;
+//        div2.onmouseover = DivFlying;
+
+    </script>
+    <link rel="stylesheet" href="../../swordart/css/style02.css">
+</head>
+<body>
+    <!--<div id="div2">-->
+        <!--<img src="image/pic01.png" alt="">-->
+        <!--<img src="image/pic01.png" alt="">-->
+        <!--<img src="image/pic01.png" alt="">-->
+    <!--</div>-->
+    <div id="wrap">
+        <div id="divFly" >
+            <!--<div id="img6"><img src="image/moving_item_bg1.jpg" alt=""></div>-->
+            <div id="img5" ><img src="../image/moving_item_chocobo_03.png" alt=""></div>
+            <div id="img1" ><img src="../image/moving_item_chocobo_04.png" alt=""></div>
+            <div id="img2"> <img src="../image/moving_item_chocobo_01.png" alt=""></div>
+            <div id="img3" ><img src="../image/moving_item_grass.png" alt=""></div>
+            <div id="img4" ><img src="../image/moving_item_chocobo_02.png" alt=""></div>
+        </div>
+        <div id="divFly2" >
+            <!--<div id="img6"><img src="image/moving_item_bg1.jpg" alt=""></div>-->
+            <div id="img-5" ><img src="../image/moving_item_chocobo_03.png" alt=""></div>
+            <div id="img-1" ><img src="../image/moving_item_chocobo_04.png" alt=""></div>
+            <div id="img-2"> <img src="../image/moving_item_chocobo_01.png" alt=""></div>
+            <div id="img-3" ><img src="../image/moving_item_grass.png" alt=""></div>
+            <div id="img-4" ><img src="../image/moving_item_chocobo_02.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
